@@ -3,9 +3,8 @@
 ## 安装
 
 安装包
-```text
-    安装命令    
-    pip install xxxx.tar.gz
+```bash
+python setup.py install
 ```
 
 ## 使用
