@@ -1,7 +1,9 @@
 from setuptools import setup
 import codecs
 import os
-from sxsc_tushare import __version__
+
+
+__version__ = '1.2.1'
 
 
 def read(fname):

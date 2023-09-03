@@ -4,11 +4,10 @@ pro init
 Created on 2019/12/23
 @author: Tushare
 """
-from __future__  import division
+from __future__ import division
 
 from functools import partial
 
-import pandas
 import pandas as pd
 import requests
 
@@ -55,7 +54,7 @@ class DataApi:
         else:
             self.__http_url = self.__http_url_nw
 
-    def api(self, api_name, fields='', **kwargs):
+    def query(self, api_name, fields='', **kwargs):
         """ 走通用API配置接口 """
         data = {
             'api_name': api_name,
@@ -77,7 +76,7 @@ class DataApi:
         return pd.DataFrame(items, columns=columns)
 
     def __getattr__(self, name):
-        return partial(self.api, name)
+        return partial(self.query, name)
 
 
 def get_api(token='', timeout=60, env='prd'):
