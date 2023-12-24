@@ -33,8 +33,8 @@ class DataApi:
 
     __token = ''
     __http_url = ''
-    __http_url_nw = 'http://10.120.57.18:7172'          # 内网地址
-    __http_url_gw = 'http://58.247.253.233:7172'        # 公网地址
+    __http_url_nw = 'http://10.5.42.55:7172'          # 内网地址
+    __http_url_gw = 'http://221.204.19.233:7172'        # 公网地址
 
     def __init__(self, token, timeout=50, env='prd'):
         """

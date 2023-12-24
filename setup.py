@@ -3,7 +3,7 @@ import codecs
 import os
 
 
-__version__ = '1.2.1'
+__version__ = '1.2.11'
 
 
 def read(fname):
@@ -36,7 +36,7 @@ setup(
 
     # 程序的详细描述
     long_description=long_desc,
-    url='http://58.247.253.233:7173',
+    url='http://10.5.42.55:7173',
     keywords='Financial Data',
 
     # 程序的所属分类列表
