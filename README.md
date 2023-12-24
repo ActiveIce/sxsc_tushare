@@ -5,10 +5,10 @@
 安装包
 ```text
     # 打包命令
-    tar -zcv --exclude __pycache__ -f sxsc-tushare.20230823.tgz sxsc_tushare README.md requirements.txt setup.py
+    tar -zcv --exclude __pycache__ -f sxsc-tushare.20231213.tgz sxsc_tushare README.md requirements.txt setup.py
     
     # 安装命令    
-    pip install xxxx.tar.gz
+    pip install sxsc-tushare.20231213.tgz
 ```
 
 ## 使用
